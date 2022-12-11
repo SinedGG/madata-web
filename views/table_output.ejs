@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyAnswerData</title>
+  </head>
+  <body>
+    <table border="1" cellpadding="7" cellspacing="7">
+      <tr>
+        <th width="50px">No</th>
+        <th>Питання</th>
+        <th>Відповідь</th>
+      </tr>
+      <% console.log(data) %> <% if(data.length){ for(var i = 0;i <
+      data.length;i++) { %>
+      <tr>
+        <td><%=(i+1)%></td>
+        <td><%=data[i].questions%></td>
+        >
+        <td><%=data[i].answers%></td>
+      </tr>
+      <% } }else{ %>
+      <tr>
+        <td colspan="3">No data</td>
+      </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
